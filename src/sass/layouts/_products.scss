@@ -228,33 +228,33 @@
     }
   }
   
-  .product-list__btn {
-    margin-bottom: 10px;
-    width: 40px;
-    height: 20px;
-    background-color: transparent;
-    border-color: transparent;
-    outline: none;
-    cursor: pointer;
-    // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  // .product-list__btn {
+  //   margin-bottom: 10px;
+  //   width: 40px;
+  //   height: 20px;
+  //   background-color: transparent;
+  //   border-color: transparent;
+  //   outline: none;
+  //   cursor: pointer;
+  //   background-image: url(../images/symbol-defs.svg#icon-arrow);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
   
-    &:hover{
-      // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
-      width: 50px;
-      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    }
-    &:focus{
-      // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
-      width: 50px;
-      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    }
+  //   &:hover{
+  //     background-image: url(../images/symbol-defs.svg#icon-arrow-hover);
+  //     width: 50px;
+  //     animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  //   }
+  //   &:focus{
+  //     background-image: url(../images/symbol-defs.svg#icon-arrow-focus);
+  //     width: 50px;
+  //     animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  //   }
   
-    @keyframes arrow {
-      0%{transform: translateX(0);}
-      50%{transform: translateX(7px);}
-      100%{transform: translateX(0);}
-    }
-  }
+  //   @keyframes arrow {
+  //     0%{transform: translateX(0);}
+  //     50%{transform: translateX(7px);}
+  //     100%{transform: translateX(0);}
+  //   }
+  // }
