@@ -1,0 +1,203 @@
+.section-about {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 32px;
+    @include tablet {
+      padding-bottom: 53px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    @include desktop {
+      padding-bottom: 60px;
+      padding-left: 16px;
+    }
+  }
+  
+  .about__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 12px;
+  
+    @include tablet {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1.23;
+      letter-spacing: 0.04em;
+    }
+  
+    @include desktop {
+      font-size: 30px;
+    }
+  }
+  
+  .about__title {
+    font-family: "Seymour One";
+    font-size: 30px;
+    line-height: 1.27;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    max-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  
+    @include tablet {
+      font-size: 34px;
+      line-height: 1.27;
+      letter-spacing: 0.06em;
+      padding-bottom: 79px;
+      max-width: 100%;
+    }
+  
+    @include desktop {
+      font-size: 36px;
+      line-height: 1.25;
+      padding-bottom: 172px;
+    }
+  }
+  
+  // .block__about{
+  //   position: relative;
+  //   background:  linear-gradient(
+  //     0deg,
+  //     rgba(248, 210, 78, 0.7),
+  //     rgba(248, 210, 78, 0.7)
+  //   ),
+  //   #d9d9d9;
+  //   border-radius: 50%;
+  //   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  //   width: 278px;
+  //   height: 278px;
+  // }
+  
+  // .block__about::before {
+  //   content: " ";
+  //   display: block;
+  //   position: relative;
+  //   background:url(../images/cow_mob.png);
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   // background-position: 21px, 265px;
+  //   height: 278px;
+  //   width: 278px;
+  //   display: flex;
+  //   margin: 0 auto;
+  
+  //   @include desktop {
+  //     width: 336px;
+  //     height: 356px;
+  //     display: flex;
+  //   }
+  // }
+  
+  
+  .about {
+    padding-top: 372px;
+  }
+  
+  .about__list {
+    width: 220px;
+    margin: 0 auto;
+  
+    &:last-child {
+      padding-bottom: 20px;
+    }
+  
+    @include tablet {
+      width: 334px;
+      &:last-child {
+        padding-bottom: 48px;
+      }
+    }
+    @include desktop {
+      width: 463px;
+    }
+  }
+  
+  .about__item {
+    display: block;
+    color: var(--main-text-color);
+    &:first-child {
+      margin-bottom: 4px;
+    }
+  
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 4px;
+      }
+    }
+    @include desktop {
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  
+  .about__item-first {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    @include desktop {
+      font-size: 16px;
+    }
+  }
+  
+  .about__item-second {
+    font-size: 12px;
+    line-height: 1.58;
+    text-align: center;
+    @include tablet {
+      line-height: 1.75;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.93;
+    }
+  }
+  
+  .about__item-last {
+    display: none;
+    @include tablet {
+      display: contents;
+      font-size: 12px;
+      line-height: 1.92;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      font-size: 14px;
+      line-height: 1.93;
+    }
+  }
+  
+  .about__item-text {
+    position: relative;
+    @include tablet {
+      text-align: start;
+    }
+  }
+  
+  .about_btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn__read-more {
+    position: relative;
+    display: block;
+    width: 164px;
+  }
+  
+  .about__img {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 34px;
+  }
+  
