@@ -474,11 +474,12 @@ body {
     @include desktop {
       padding-top: 42px;
       padding-left: 16px;
+      width: 450px;
     }
   }
   
   .hero-img-plate {
-    display: block;
+    display: inline-block;
     width: 152px;
   
     @include desktop {
