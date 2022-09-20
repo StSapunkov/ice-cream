@@ -106,7 +106,8 @@
       max-width: 224px;
       width: calc((100% - 32px) / 3);
     }
-    @include tablet {
+    
+    @include desktop {
       padding: 166px 64px 0;
   
       max-width: 370px;
@@ -204,6 +205,7 @@
   
     @include desktop {
       font-size: 30px;
+      margin-bottom: 65px;
     }
   }
   
@@ -225,36 +227,40 @@
   
     @include desktop{
       font-size: 16px;
+      margin-bottom: 55px;
     }
   }
   
-  // .product-list__btn {
-  //   margin-bottom: 10px;
-  //   width: 40px;
-  //   height: 20px;
-  //   background-color: transparent;
-  //   border-color: transparent;
-  //   outline: none;
-  //   cursor: pointer;
-  //   background-image: url(../images/symbol-defs.svg#icon-arrow);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
+  .product-list__btn {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    background-image: url(../images/symbol-defs.svg#icon-close-button);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover{
+      background-image: url(../images/symbol-defs.svg#icon-arrow-hover);
+      width: 50px;
+      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    &:focus{
+      background-image: url(../images/symbol-defs.svg#icon-arrow-focus);
+      width: 50px;
+      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
   
-  //   &:hover{
-  //     background-image: url(../images/symbol-defs.svg#icon-arrow-hover);
-  //     width: 50px;
-  //     animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  //   }
-  //   &:focus{
-  //     background-image: url(../images/symbol-defs.svg#icon-arrow-focus);
-  //     width: 50px;
-  //     animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-  //   }
-  
-  //   @keyframes arrow {
-  //     0%{transform: translateX(0);}
-  //     50%{transform: translateX(7px);}
-  //     100%{transform: translateX(0);}
-  //   }
-  // }
+@include desktop{
+  margin-bottom: 50px;
+}
+
+    @keyframes arrow {
+      0%{transform: translateX(0);}
+      50%{transform: translateX(7px);}
+      100%{transform: translateX(0);}
+    }
+  }
