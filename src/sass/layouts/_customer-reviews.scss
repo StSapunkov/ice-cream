@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+.review-card {
+  margin: 0 auto;
+  max-width: 100%;
+  //padding: 80px 20px 349px 20px;
+  padding-top: 80px;
+  padding-bottom: 349px;
+  background-image: url(../images/mobile/review-mobile/review-mobile-bg.jpg);
+  background-repeat: no-repeat;
+  //background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/mobile/review-mobile/review-mobile-bg@2x.jpg);
+  }
+  @include mobile {
+    width: 480px;
+  }
+
+  @include tablet {
+    width: 768px;
+    padding-top: 223px;
+    padding-bottom: 328px;
+    background-image: url(../images/tablet/review-tablet/review-tablet-bg.jpg);
+    @include retina {
+      background-image: url(../images/tablet/review-tablet/review-tablet-bg@2x.jpg);
+    }
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-top: 452px;
+    padding-bottom: 207px;
+    background-image: url(../images/desktop/review-desktop/review-desktop-bg.jpg);
+    @include retina {
+      background-image: url(../images/desktop/review-desktop/review-desktop-bg@2x.jpg);
+    }
+  }
+}
+
+.review-card > .container {
+  padding-left: 20px;
+  padding-right: 20px;
+  @include tablet {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+}
+
+.user-icon {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-photo {
+  background-color: var(--main-background-color);
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.review-text {
+  margin-bottom: 30px;
+  padding: 34px 39px;
+  background-color: var(--main-background-color);
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  border-radius: 10px;
+
+  @include tablet {
+    margin-bottom: 32px;
+    padding: 28px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+
+  @include desktop {
+    padding: 39px 73px;
+    font-size: 16px;
+  }
+}
+
+.review-author {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--primary-text-color);
+
+  @include tablet {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
+
+.slider-indicators {
+  position: static;
+  display: flex;
+  gap: 18px;
+  margin-bottom: 0;
+}
+
+// .slider-indicators:hover {
+// }
+.slider-indicators button {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  border: none;
+}
+
+.slider-indicators > .active {
+  background-color: var(--main-background-color);
+}
