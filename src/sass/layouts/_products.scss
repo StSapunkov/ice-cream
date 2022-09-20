@@ -1,10 +1,10 @@
 .products {
     padding: 60px 20px;
-    background-image: url(../../images/mobile/product-mobile/product-bgd-product.jpg);
+    background-image: url(../images/mobile/product-mobile/product-bgd-product.jpg);
     background-size: cover;
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     @include retina {
-      background-image: url(../../images/mobile/product-mobile/product-bgd-product2x.jpg);
+      background-image: url(../images/mobile/product-mobile/product-bgd-product2x.jpg);
     }
   
     @include tablet {
@@ -136,21 +136,21 @@
   
   .product-list__item::before {
     content: '';
-      background-image: url(../../images/mobile/product-mobile/product-ice-cream.jpg);
+      background-image: url(../images/mobile/product-mobile/product-ice-cream.jpg);
     @include retina{
-      background-image: url(../../images/mobile/product-mobile/product-ice-cream-x2.jpg);
+      background-image: url(../images/mobile/product-mobile/product-ice-cream-x2.jpg);
     }
   }
   .product-list__item:nth-child(2):before{
-    background-image: url(../../images/mobile/product-mobile/product-ice-coffee.jpg);
+    background-image: url(../images/mobile/product-mobile/product-ice-coffee.jpg);
     @include retina{
-      background-image: url(../../images/mobile/product-mobile/product-ice-coffe-x2.jpg);
+      background-image: url(../images/mobile/product-mobile/product-ice-coffe-x2.jpg);
     }
   }
   .product-list__item:nth-child(3):before{
-    background-image: url(../../images/mobile/product-mobile/product-milkshakes.jpg);
+    background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
     @include retina{
-      background-image: url(../../images/mobile/product-mobile/product-milkshakes-x2.jpg);
+      background-image: url(../images/mobile/product-mobile/product-milkshakes-x2.jpg);
     }
   }
   
@@ -235,22 +235,22 @@
     background-color: transparent;
     border-color: transparent;
     outline: none;
-    // cursor: pointer;
-    // background-image: url(../images/hero-arrow.svg);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // background-position: center;
+    cursor: pointer;
+    // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   
-    // &:hover{
-    //   background-image: url(../images/hero-arrow-hover.svg);
-    //   width: 50px;
-    //   animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    // }
-    // &:focus{
-    //   background-image: url(../images/hero-arrow-focus.svg);
-    //   width: 50px;
-    //   animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-    // }
+    &:hover{
+      // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
+      width: 50px;
+      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    &:focus{
+      // background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
+      width: 50px;
+      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
   
     @keyframes arrow {
       0%{transform: translateX(0);}
@@ -258,4 +258,3 @@
       100%{transform: translateX(0);}
     }
   }
-  
