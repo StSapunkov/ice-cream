@@ -1,0 +1,173 @@
+<header>
+      <div class="container">
+        <div class="mobile-header">
+          <a class="logo-header" href="index.html"
+            ><picture>
+              <source
+                srcset="
+                  ./images/desktop/hero-header-desktop/logo-header.png   1x,
+                  ./images/desktop/hero-header-desktop/logo-header2x.png 2x
+                "
+              />
+              <img
+                class="logo-header-img"
+                src="./images/desktop/hero-header-desktop/logo-header.png"
+                alt="logo"
+              /> </picture
+          ></a>
+          <button class="header__icon icon-menu is-open" data-menu-open>
+            <svg width="32" height="32">
+              <use href="./images/menu.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu is-hidden" data-menu>
+          <button class="header__icon icon-close" data-menu-close>
+            <svg width="32" height="32">
+              <use href="./images/close.svg#close"></use>
+            </svg>
+          </button>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="index.html">Home</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="">How it’s made?</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="">Our products</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header-button-mobile">
+            Buy now
+            <svg width="12" height="12" class="header__button-icon">
+              <use href="./images/button-arrow.svg#button-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <button type="button" class="header-button">
+          Buy now
+          <svg width="12" height="12" class="header__button-icon">
+            <use href="./images/button-arrow.svg#button-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero__mobile">
+          <h1 class="hero__header">
+            ice cream made with <span class="hero__header-part">passion</span>
+          </h1>
+          <div class="hero__button-list">
+            <button class="hero___button-products">Products</button>
+            <button class="hero___button-how">How it’s made?</button>
+          </div>
+        </div>
+
+        <div class="hero__side-text">
+          <p class="hero__side-p"> <div class="hero__side-text-part">16</div> cafes</p>
+          <p class="hero__side-p"> <div class="hero__side-text-part">23</div> food trucks</p>
+        </div>
+
+        <div class="hero-info">
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/hero-header-desktop/hero-plate.png   1x,
+                ./images/desktop/hero-header-desktop/hero-plate2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/hero-header-tablet/hero-plate.png   1x,
+                ./images/tablet/hero-header-tablet/hero-plate2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+
+            <img
+              class="hero-img-plate"
+              src="./images/desktop/hero-header-desktop/hero-plate.png"
+              alt="plate with ice-cream"
+            />
+          </picture>
+          <div class="hero-info__block">
+            <p class="hero__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <button class="hero__button-arrow">
+
+            </button>
+          </div>
+        </div>
+        
+
+<picture class="hero__ice-cream-img">
+          <source
+            srcset="
+              ./images/desktop/hero-header-desktop/hero-ice-cream.png   1x,
+              ./images/desktop/hero-header-desktop/hero-ice-cream2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/hero-header-tablet/hero-ice-cream.png   1x,
+              ./images/tablet/hero-header-tablet/hero-ice-cream2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/hero-header-mobile/hero-ice-cream.png   1x,
+              ./images/mobile/hero-header-mobile/hero-ice-cream2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-img-ice-cream"
+            src="./images/desktop/hero-header-desktop/hero-ice-cream.png"
+            alt="ice-cream"
+          />
+        </picture>
+
+        <picture class="hero__dots-img">
+          <source
+            srcset="
+              ./images/desktop/hero-header-desktop/hero-dots.png   1x,
+              ./images/desktop/hero-header-desktop/hero-dots2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/hero-header-tablet/hero-dots.png   1x,
+              ./images/tablet/hero-header-tablet/hero-dots2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/hero-header-mobile/hero-dots.png   1x,
+              ./images/mobile/hero-header-mobile/hero-dots2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="hero-img-dots"
+            src="./images/desktop/hero-header-desktop/hero-dots.png"
+            alt="dots"
+          />
+        </picture>
+      </div>
+    </section>
