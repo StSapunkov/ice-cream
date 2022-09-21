@@ -1,0 +1,37 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="icecream-shop">
+        <button class="btn-close" data-modal-close>
+            <svg width="16" height="16">
+                <use class="btn-icon" href="./images/sprite/symbol-defs.svg#icon-close-button"></use>
+            </svg>
+        </button>
+        <p class="icecream-shop__title">Thank you for your interest in owning an Ice Cream shop</p>
+        <p class="icecream-shop__text">Due to the overwhelming volume of franchise requests we are not accepting new
+            franchisee applications at this time. Once
+            the application process resumes, we will contact you for further information. Please fill out the contact
+            information
+            below and we will reach out for additional information. We appreciate your patience.</p>
+        <form class="form-shop">
+            <div class="form-shop__field">
+                <label class="form-shop__label" for="name" hidden></label>
+                <input class="form-shop__input" type="text" name="user-namer" id="name" placeholder="Name" minlength="4"
+                    maxlength="15" pattern="[a-zA-Z'-'\s]*" required>
+            </div>
+            <div class="form-shop__field">
+                <label class="form-shop__label" for="tel" hidden></label>
+                <input class="form-shop__input" type="tel" name="user-tel" placeholder="Phone" id="tel"
+                    pattern="[0-9]{10}" title="Ten digits code" required>
+            </div>
+            <div class="form-shop__field">
+                <label class="form-shop__label" for="mail" hidden></label>
+                <input class="form-shop__input" type="email" name="mail" placeholder="Email" id="mail"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter Valid Email Id" required>
+            </div>
+            <div class="form-shop__comment">
+                <label class="form-shop__label" for="comment" hidden></label>
+                <textarea name="comment" id="comment" placeholder="Comment"></textarea>
+            </div>
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
