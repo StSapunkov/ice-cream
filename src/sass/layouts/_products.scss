@@ -1,15 +1,22 @@
 .products {
     padding: 60px 20px;
-    background-image: url(../images/mobile/product-mobile/product-bgd-product.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../images/mobile/products-mobile/product-bgd-mobile.jpg);
+    background-size: contain;
     @include retina {
-      background-image: url(../images/mobile/product-mobile/product-bgd-product2x.jpg);
+      background-image: url(../images/mobile/products-mobile/product-bgd-mobile-x2.jpg);
     }
   
     @include tablet {
       padding: 60px 32px 82px;
+
+      background-image: url(../images/mobile/products-mobile/product-bgd-product.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include retina {
+        background-image: url(../images/mobile/products-mobile/product-bgd-product2x.jpg);
+      }
     }
+
     @include desktop {
       padding: 60px 12px;
     }
@@ -17,8 +24,6 @@
   
   .products__pre-title {
     margin-bottom: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.22;
@@ -26,7 +31,7 @@
     text-align: center;
     text-transform: uppercase;
   
-    color: #131313;
+    color: var(--primary-text-color);
   
     @include tablet{
       font-size: 22px;
@@ -38,7 +43,6 @@
   .products__title {
     margin-bottom: 148px;
     font-family: 'Seymour One';
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 1.27;
@@ -46,7 +50,7 @@
     text-align: center;
     letter-spacing: 0.04em;
   
-    color: #131313;
+    color: var(--primary-text-color);
   
     @include tablet{
       font-size: 34px;
@@ -137,21 +141,21 @@
   
   .product-list__item::before {
     content: '';
-      background-image: url(../images/mobile/product-mobile/product-ice-cream.jpg);
+      background-image: url(../images/mobile/products-mobile/product-ice-cream.jpg);
     @include retina{
-      background-image: url(../images/mobile/product-mobile/product-ice-cream-x2.jpg);
+      background-image: url(../images/mobile/products-mobile/product-ice-cream-x2.jpg);
     }
   }
   .product-list__item:nth-child(2):before{
-    background-image: url(../images/mobile/product-mobile/product-ice-coffee.jpg);
+    background-image: url(../images/mobile/products-mobile/product-ice-coffee.jpg);
     @include retina{
-      background-image: url(../images/mobile/product-mobile/product-ice-coffe-x2.jpg);
+      background-image: url(../images/mobile/products-mobile/product-ice-coffe-x2.jpg);
     }
   }
   .product-list__item:nth-child(3):before{
-    background-image: url(../images/mobile/product-mobile/product-milkshakes.jpg);
+    background-image: url(../images/mobile/products-mobile/product-milkshakes.jpg);
     @include retina{
-      background-image: url(../images/mobile/product-mobile/product-milkshakes-x2.jpg);
+      background-image: url(../images/mobile/products-mobile/product-milkshakes-x2.jpg);
     }
   }
   
@@ -188,7 +192,6 @@
   
   .product-list__title {
     margin-bottom: 40px;
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -213,8 +216,6 @@
     margin-bottom: 70px;
     flex-grow: 1;
 
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.76;
@@ -224,12 +225,12 @@
     color: #131313;
     
   @include tablet{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   
     @include desktop{
       font-size: 16px;
-      margin-bottom: 55px;
+      margin-bottom: 70px;
     }
   }
   
@@ -244,12 +245,12 @@
     scale: 0.8;
     &:hover{
       width: 50px;
-      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation: arrow 500ms var(--cubic) infinite;
       scale: 1;
     }
     &:focus{
       width: 150px;
-      animation: arrow 500ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation: arrow 500ms var(--cubic) infinite;
       scale: 1;
     }
   
