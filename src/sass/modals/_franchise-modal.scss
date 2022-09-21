@@ -20,29 +20,39 @@
     border: 2px solid var(--hover-text-color);
     border-radius: 10px;
 }
-.backdrop.is-hidden .icecream-shop {
-    transform: rotate(270deg);
-}
+// .backdrop.is-hidden .icecream-shop {
+//     transform: rotate(270deg);
+// }
 .btn-close {
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 8px;
+    right: 8px;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
 
     @include tablet {
-        top: 24px;
-        right: 24px;
+    top: 20px;
+    right: 20px;
     }
 
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
-
+.btn-icon {
+    transition: fill 500ms var(--cubic);
+}
+.btn-close:hover .btn-icon,
+.btn-close:focus .btn-icon {
+    fill: var(--hover-text-color);
+}
 .icecream-shop__title {
     margin-bottom: 20px;
 
     @include tablet {
-        margin-bottom: 24px;
+    margin-bottom: 24px;
     }
 
     font-family: 'Seymour One';
@@ -115,6 +125,8 @@
 
         transition: border-color 500ms var(--cubic);
 
+        cursor: pointer;
+
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -171,7 +183,7 @@
     margin-right: auto;
 
     min-width: 114px;
-    padding: 12.12px 34px;
+    padding: 12px 34px;
 
     @include tablet {
         min-width: 121px;
@@ -185,6 +197,8 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 1.25;
+
+    cursor: pointer;
 
     color: var(--primary-text-color);
 
