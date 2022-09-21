@@ -3,16 +3,14 @@
     padding-bottom: 32px;
     @include tablet {
       padding-bottom: 53px;
-      padding-left: 32px;
-      padding-right: 32px;
+
     }
     @include desktop {
       padding-bottom: 60px;
-      padding-left: 16px;
     }
-  }
+}
   
-  .about__label {
+.about__label {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -31,9 +29,9 @@
     @include desktop {
       font-size: 30px;
     }
-  }
+}
   
-  .about__title {
+.about__title {
     font-family: "Seymour One";
     font-size: 30px;
     line-height: 1.27;
@@ -49,18 +47,27 @@
       font-size: 34px;
       line-height: 1.27;
       letter-spacing: 0.06em;
-      padding-bottom: 79px;
+      padding-bottom: 72px;
       max-width: 100%;
     }
   
     @include desktop {
       font-size: 36px;
       line-height: 1.25;
-      padding-bottom: 172px;
+      padding-bottom: 82px;
     }
-  }
+}
   
-  .about__image-cow{
+.about__icecream-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+    justify-content: space-between;
+    align-items: normal;}
+}
+
+.about__image-cow{
     position: relative;
     display: flex;
     background:  linear-gradient(
@@ -75,17 +82,41 @@
     height: 278px;
     margin: 0 auto;
     margin-bottom: 60px;
-  }
-  .about{
+
+    @include tablet{
+        width: 336px;
+        height: 356px;
+        margin-bottom: 0;
+    }
+
+    @include desktop{
+        width: 500px;
+        height: 529px;
+    }
+}
+
+  
+.about{
     display: flex;
     flex-direction: column;
-  }
+    @include tablet{
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 74px;
+        gap: 32px;
+    }
+    @include desktop{
+        gap: 100px;
+        padding-right: 105px;
+        padding-bottom: 89px;
+    }
+}
 
-  .about__image-cow::after {
+.about__image-cow::after {
     content: " ";
     display: block;
     position: absolute;
-    background:url(../images/mobile/about-mobile/cow_mob.png);
+    background-image:url(../images/mobile/about-mobile/cow_mob.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
@@ -94,35 +125,43 @@
     top: calc(50% + 22px);
     left: 50%;
     transform: translate(-50%, -50%);
-
-    @include desktop {
-      width: 336px;
-      height: 356px;
-      display: flex;
+    @include retina{
+        background-image:url(../images/mobile/about-mobile/cow_mob_2x.png);
     }
-  }
+
+    @include tablet {
+      display: flex;
+      background-image:url(../images/tablet/about-tablet/cow_tab.png);
+      top: calc(50% + 25px);
+      @include retina{
+        background-image:url(../images/tablet/about-tablet/cow_tab_2x.png);}
+    }
+
+    @include desktop{
+        top: calc(50% + 39px);
+        background-image:url(../images/desktop/about-desktop/cow_desk.png);
+        @include retina{
+          background-image:url(../images/desktop/about-desktop/cow_desk_2x.png);}
+    }
+}
+
     
-  .about__list {
+.about__list {
     width: 220px;
     margin: 0 auto;
     padding-bottom: 20px;
   
-    &:last-child {
-      padding-bottom: 20px;
-    }
-  
     @include tablet {
       width: 334px;
-      &:last-child {
-        padding-bottom: 48px;
-      }
+      padding-bottom: 48px;
     }
+
     @include desktop {
-      width: 463px;
+      min-width: 463px;
     }
-  }
+}
   
-  .about__item {
+.about__item {
     display: block;
     color: var(--main-text-color);
     &:first-child {
@@ -139,9 +178,9 @@
         margin-bottom: 8px;
       }
     }
-  }
+}
   
-  .about__item-first {
+.about__item-first {
     font-size: 12px;
     text-align: center;
     line-height: 1.75;
@@ -149,9 +188,9 @@
     @include desktop {
       font-size: 16px;
     }
-  }
+}
   
-  .about__item-second {
+.about__item-second {
     font-size: 12px;
     line-height: 1.58;
     text-align: center;
@@ -163,9 +202,9 @@
       font-size: 14px;
       line-height: 1.93;
     }
-  }
+}
   
-  .about__item-last {
+.about__item-last {
     display: none;
     @include tablet {
       display: contents;
@@ -177,28 +216,22 @@
       font-size: 14px;
       line-height: 1.93;
     }
-  }
+}
   
-  .about__item-text {
+.about__item-text {
     position: relative;
     @include tablet {
       text-align: start;
     }
-  }
+}
   
-  .about_btn{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 42px;
-  }
 
 .btn__read-more {
     display: flex;
     position: relative;
     align-items: center;
-    // text-align: center;
     justify-content: center;
-    min-width: 164px;
+    width: 164px;
 
     background-color: var(--hover-text-color);
     border: none;
@@ -230,10 +263,10 @@
     }
 }
   
-  .about__img {
+.about__img {
     display: block;
-margin-left: 5px;
-  }
+    margin-left: 5px;
+}
 
   
   
