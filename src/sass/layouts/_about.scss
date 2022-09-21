@@ -1,6 +1,6 @@
 .section-about {
     padding-top: 60px;
-    padding-bottom: 32px;
+    padding-bottom: 42px;
     @include tablet {
       padding-bottom: 53px;
 
@@ -102,13 +102,11 @@
     @include tablet{
         flex-direction: row;
         align-items: center;
-        padding-bottom: 74px;
         gap: 32px;
     }
     @include desktop{
         gap: 100px;
         padding-right: 105px;
-        padding-bottom: 89px;
     }
 }
 
@@ -149,7 +147,7 @@
 .about__list {
     width: 220px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   
     @include tablet {
       width: 334px;
@@ -192,7 +190,7 @@
   
 .about__item-second {
     font-size: 12px;
-    line-height: 1.58;
+    line-height: 1.62;
     text-align: center;
     @include tablet {
       line-height: 1.75;
