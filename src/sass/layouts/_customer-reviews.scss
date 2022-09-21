@@ -5,8 +5,8 @@
   margin: 0 auto;
   max-width: 100%;
   //padding: 80px 20px 349px 20px;
-  padding-top: 80px;
-  padding-bottom: 349px;
+  padding-top: 186px;
+  padding-bottom: 394px;
   background-image: url(../images/mobile/customer-reviews-mobile/review-mobile-bg.jpg);
   background-repeat: no-repeat;
   //background-position: center;
@@ -22,7 +22,7 @@
   @include tablet {
     width: 768px;
     padding-top: 223px;
-    padding-bottom: 328px;
+    padding-bottom: 384px;
     background-image: url(../images/tablet/customer-reviews-tablet/review-tablet-bg.jpg);
     @include retina {
       background-image: url(../images/tablet/customer-reviews-tablet/review-tablet-bg@2x.jpg);
@@ -31,7 +31,7 @@
 
   @include desktop {
     width: 1200px;
-    padding-top: 452px;
+    padding-top: 456px;
     padding-bottom: 207px;
     background-image: url(../images/desktop/customer-reviews-desktop/review-desktop-bg.jpg);
     @include retina {
@@ -56,11 +56,14 @@
 .user-icon {
   display: flex;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   width: 85px;
   height: 85px;
   border-radius: 50%;
   overflow: hidden;
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .user-photo {
@@ -86,6 +89,7 @@
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+    border-radius: 24px;
   }
 
   @include desktop {
