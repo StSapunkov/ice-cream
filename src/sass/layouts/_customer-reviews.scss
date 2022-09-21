@@ -7,13 +7,13 @@
   //padding: 80px 20px 349px 20px;
   padding-top: 80px;
   padding-bottom: 349px;
-  background-image: url(../images/mobile/review-mobile/review-mobile-bg.jpg);
+  background-image: url(../images/mobile/customer-reviews-mobile/review-mobile-bg.jpg);
   background-repeat: no-repeat;
   //background-position: center;
   background-size: cover;
 
   @include retina {
-    background-image: url(../images/mobile/review-mobile/review-mobile-bg@2x.jpg);
+    background-image: url(../images/mobile/customer-reviews-mobile/review-mobile-bg@2x.jpg);
   }
   @include mobile {
     width: 480px;
@@ -23,9 +23,9 @@
     width: 768px;
     padding-top: 223px;
     padding-bottom: 328px;
-    background-image: url(../images/tablet/review-tablet/review-tablet-bg.jpg);
+    background-image: url(../images/tablet/customer-reviews-tablet/review-tablet-bg.jpg);
     @include retina {
-      background-image: url(../images/tablet/review-tablet/review-tablet-bg@2x.jpg);
+      background-image: url(../images/tablet/customer-reviews-tablet/review-tablet-bg@2x.jpg);
     }
   }
 
@@ -33,9 +33,9 @@
     width: 1200px;
     padding-top: 452px;
     padding-bottom: 207px;
-    background-image: url(../images/desktop/review-desktop/review-desktop-bg.jpg);
+    background-image: url(../images/desktop/customer-reviews-desktop/review-desktop-bg.jpg);
     @include retina {
-      background-image: url(../images/desktop/review-desktop/review-desktop-bg@2x.jpg);
+      background-image: url(../images/desktop/customer-reviews-desktop/review-desktop-bg@2x.jpg);
     }
   }
 }
