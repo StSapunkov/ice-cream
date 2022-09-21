@@ -1,8 +1,8 @@
 .main-modal {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%) rotate(0deg);
     transition: transform 500ms var(--cubic);
 
     height: auto;
@@ -181,7 +181,7 @@
 
 .form-field:nth-child(1) {
     @media screen and (max-width:767px) {
-        margin-top: 24px;
+        padding-top: 24px;
     }
 }
 .form-field__input,
