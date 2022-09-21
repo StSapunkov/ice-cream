@@ -1,0 +1,127 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 500ms var(--cubic);
+    opacity: 1;
+}
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.howitsmade {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: transform 500ms var(--cubic);
+
+    width: 280px;
+    height: auto;
+    padding: 28px;
+
+    z-index: 5;
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 32px 60px;
+    }
+
+    background: var(--main-text-color);
+    border: 2px solid var(--hover-text-color);
+    border-radius: 10px;
+}
+.backdrop.is-hidden .howitsmade {
+    transform: rotate(270deg);
+}
+
+.btn-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    @include tablet {
+        top: 24px;
+        right: 24px;
+    }
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-icon {
+    transition: fill 500ms var(--cubic);
+}
+
+.btn-close:hover .btn-icon,
+.btn-close:focus .btn-icon {
+    fill: var(--hover-text-color);
+}
+.howitsmade__title {
+    margin-bottom: 20px;
+    margin-top: 0;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+        max-width: 322px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    color: var(--primary-text-color);
+}
+
+.howitsmade__container {
+    position: relative;
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.howitsmade iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.howitsmade__text {
+    margin: 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include tablet {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    color: var(--primary-text-color);
+}
