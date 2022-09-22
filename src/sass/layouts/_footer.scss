@@ -1,8 +1,21 @@
+.footer{
+    padding-bottom: 62px;
+
+    @include tablet{
+        padding-bottom: 13px;
+    }
+
+    @include desktop {
+            padding-bottom: 11px;
+    }
+}
+
 .container {
     width: 100%;
 }
 
 .footer-container {
+    padding-bottom: 40px;
 
     background-color: var(--main-background-color);
 
@@ -10,6 +23,11 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        padding-bottom: 32px;
+    }
+
+    @include desktop {
+        padding-bottom: 54px;
     }
 }
 
@@ -66,12 +84,16 @@
         font-size: 48px;
         line-height: 1.23;
     }
+
+    @include desktop{
+        font-size: 58px;
+    }
 }
 
 .footer-social {
     display: flex;
     justify-content: flex-end;
-    gap: 27px;
+    gap: 28px;
     margin-bottom: 38px;
 
     @include tablet {
@@ -107,12 +129,8 @@
     display: flex;
     justify-content: flex-end;
 
-    margin-bottom: 40px;
     gap: 4px;
 
-    @include tablet {
-        margin-bottom: 56px;
-    }
 }
 
 .footer-contakt {
@@ -126,8 +144,12 @@
     line-height: 1.86;
     color: var(--primary-text-color);
 
+    @include tablet{
+        font-size: 14px;
+    }
+
     @include desktop {
-            font-size: 16px;
+        font-size: 16px;
     
     }
 }
@@ -140,6 +162,10 @@
     color: var(--main-text-color);
     text-decoration: none;
 
+    @include tablet {
+        font-size: 14px;
+    }
+
     @include desktop{
         font-size: 16px;
     }
@@ -150,10 +176,13 @@
     display: flex;
     justify-content: center;
 
+    padding-top: 16px;
+
     border-top: 1px solid #E1E1E1;
 
     @include tablet {
-        margin-bottom: 13px;
+        padding-top: 14px;
+        
     }
 }
 
@@ -162,7 +191,7 @@
 
     @include tablet {
         display: flex;
-        margin-top: 14px;
+        
     }
 }
 
@@ -175,19 +204,10 @@
 
     @include tablet {
         margin-right: 4px;
+        line-height: 1.86;
 
-        &:last-child{
-            margin-right: 0;
-        }
+
     }
-
     
 }
 
-.footer-rights__items:last-child{
-    margin-bottom: 62px;
-
-    @include tablet {
-        margin-bottom: 0;
-    }
-}
