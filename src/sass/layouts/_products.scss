@@ -1,0 +1,273 @@
+.products {
+    padding: 60px 20px;
+    background-image: url(../images/mobile/products-mobile/product-bgd-mobile.jpg);
+    background-size: contain;
+    @include retina {
+      background-image: url(../images/mobile/products-mobile/product-bgd-mobile-x2.jpg);
+    }
+  
+    @include tablet {
+      padding: 60px 32px 82px;
+
+      background-image: url(../images/mobile/products-mobile/product-bgd-product.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include retina {
+        background-image: url(../images/mobile/products-mobile/product-bgd-product2x.jpg);
+      }
+    }
+
+    @include desktop {
+      padding: 60px 12px;
+    }
+  }
+  
+  .products__pre-title {
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+  
+    text-align: center;
+    text-transform: uppercase;
+  
+    color: var(--primary-text-color);
+  
+    @include tablet{
+      font-size: 22px;
+    }
+    @include desktop{
+      font-size: 30px;
+    }
+  }
+  .products__title {
+    margin-bottom: 148px;
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.04em;
+  
+    color: var(--primary-text-color);
+  
+    @include tablet{
+      font-size: 34px;
+      margin-bottom: 200px;
+    }
+  
+    @include desktop{
+      font-size: 36px;
+      line-height: 1.25;
+      margin-bottom: 300px;
+    }
+  }
+  
+  .products-list {
+    text-align: center;
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+  
+  .product-list__item {
+    margin: 0 auto;
+    position: relative;
+    max-width: 280px;
+    padding: 123px 40px 0 40px;
+    border-radius: 24px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  
+    background: #aec6a5;
+  
+    &:nth-child(1) {
+      background-color: #aec6a5;
+    }
+    &:nth-child(2) {
+      background-color: #efd478;
+    }
+    &:nth-child(3) {
+      background-color: #d6936d;
+    }
+  
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 164px;
+      }
+    }
+    
+    @include tablet {
+      padding: 108px 26px 0;
+  
+      max-width: 224px;
+      width: calc((100% - 32px) / 3);
+    }
+    
+    @include desktop {
+      padding: 166px 64px 0;
+  
+      max-width: 370px;
+      width: calc((100% - 64px) / 3);
+    }
+  }
+  
+  .product-list__item::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -28%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include desktop{
+      top: -35%;
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+  .product-list__item::before {
+    content: '';
+      background-image: url(../images/mobile/products-mobile/product-ice-cream.jpg);
+    @include retina{
+      background-image: url(../images/mobile/products-mobile/product-ice-cream-x2.jpg);
+    }
+  }
+  .product-list__item:nth-child(2):before{
+    background-image: url(../images/mobile/products-mobile/product-ice-coffee.jpg);
+    @include retina{
+      background-image: url(../images/mobile/products-mobile/product-ice-coffe-x2.jpg);
+    }
+  }
+  .product-list__item:nth-child(3):before{
+    background-image: url(../images/mobile/products-mobile/product-milkshakes.jpg);
+    @include retina{
+      background-image: url(../images/mobile/products-mobile/product-milkshakes-x2.jpg);
+    }
+  }
+  
+  .lining {
+    display: block;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    @include desktop{
+      top: -32%;
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+  .lining--green{
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);}
+  
+  .lining--yellow{
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+  
+  .lining--red{
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .product-list__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    color: #131313;
+  
+  @include tablet{
+    font-size: 22px;
+    line-height: 1.23;
+  }
+  
+    @include desktop {
+      font-size: 30px;
+      margin-bottom: 65px;
+    }
+  }
+  
+  .product-list__desc {
+    margin-bottom: 70px;
+    flex-grow: 1;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+  
+    color: #131313;
+    
+  @include tablet{
+    margin-bottom: 60px;
+  }
+  
+    @include desktop{
+      font-size: 16px;
+      margin-bottom: 70px;
+    }
+  }
+  
+  .product-list__btn {
+    margin-bottom: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    scale: 0.8;
+    &:hover{
+      width: 50px;
+      animation: arrow 500ms var(--cubic) infinite;
+      scale: 1;
+    }
+    &:focus{
+      width: 150px;
+      animation: arrow 500ms var(--cubic) infinite;
+      scale: 1;
+    }
+  
+@include desktop{
+  margin-bottom: 50px;
+}
+
+    @keyframes arrow {
+      0%{transform: translateX(0);}
+      50%{transform: translateX(7px);}
+      100%{transform: translateX(0);}
+    }
+  }
+
+  .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
