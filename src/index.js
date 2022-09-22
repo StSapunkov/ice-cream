@@ -1,3 +1,4 @@
+import './scripts/hero-header-script/burger-menu'
 import './scripts/about/readmore-modal';
 import './scripts/contacts/franchise-modal';
 import './scripts/contacts/ourlocation-modal';
