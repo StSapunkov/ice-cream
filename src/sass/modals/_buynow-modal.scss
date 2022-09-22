@@ -22,9 +22,9 @@
     border-radius: 10px;
 }
 
-// .backdrop.is-hidden .main-modal {
-//     transform: rotate(270deg);
-// }
+.backdrop.is-hidden .main-modal {
+    transform: rotate(270deg);
+}
 
 .btn-close {
     position: absolute;
