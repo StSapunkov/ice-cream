@@ -1,0 +1,15 @@
+<svg version="1.1" id="menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" xml:space="preserve">
+<g>
+	<path d="M6,10h20"/>
+	<path class="st0" d="M26,11H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h20c0.6,0,1,0.4,1,1S26.6,11,26,11z"/>
+</g>
+<g>
+	<path d="M6,16h20"/>
+	<path class="st0" d="M26,17H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h20c0.6,0,1,0.4,1,1S26.6,17,26,17z"/>
+</g>
+<g>
+	<path d="M6,22h20"/>
+	<path class="st0" d="M26,23H6c-0.6,0-1-0.4-1-1s0.4-1,1-1h20c0.6,0,1,0.4,1,1S26.6,23,26,23z"/>
+</g>
+</svg>

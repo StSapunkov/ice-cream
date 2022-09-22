@@ -1,0 +1,217 @@
+.icecream-shop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%) rotate(0deg);
+    transition: transform 500ms var(--cubic);
+
+    width: 280px;
+    height: auto;
+    padding: 28px;
+
+    @include tablet {
+        width: 568px;
+        padding: 32px 60px;
+    }
+
+    z-index: 5;
+
+    background: var(--main-text-color);
+    border: 2px solid var(--hover-text-color);
+    border-radius: 10px;
+}
+// .backdrop.is-hidden .icecream-shop {
+//     transform: rotate(270deg);
+// }
+.btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    @include tablet {
+    top: 20px;
+    right: 20px;
+    }
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-icon {
+    transition: fill 500ms var(--cubic);
+}
+.btn-close:hover .btn-icon,
+.btn-close:focus .btn-icon {
+    fill: var(--hover-text-color);
+}
+.icecream-shop__title {
+    margin-bottom: 20px;
+
+    @include tablet {
+    margin-bottom: 24px;
+    }
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    @include tablet {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 322px;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    color: var(--primary-text-color);
+}
+.icecream-shop__text {
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+
+    @include tablet {
+        font-size: 16px;
+        text-align: justify;
+    }
+        color: var(--primary-text-color);
+}
+.form-shop__field {
+    margin-bottom: 12px;
+
+    @include tablet {
+        margin-bottom: 16px;
+    }
+}
+.form-shop__comment {
+    margin-bottom: 24px;
+
+    @include tablet {
+        margin-bottom: 32px;
+    }
+}
+.form-shop input,
+.form-shop textarea {
+    width: 100%;
+    padding: 8px 12px;
+
+    @include tablet {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 368px;
+        padding: 11px 16px;
+    }
+
+        background: rgba(248, 210, 78, 0.1);
+        border: 1px solid var(--main-background-color);
+        border-radius: 10px;
+
+        transition: border-color 500ms var(--cubic);
+
+        cursor: pointer;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.4;
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+        color: var(--primary-text-color);
+    }
+
+.form-shop input:hover,
+.form-shop input:focus {
+    border-color: var(--hover-text-color);
+    outline: none;
+}
+
+.form-shop textarea:hover,
+.form-shop textarea:focus {
+    border-color: var(--hover-text-color);
+    outline: none;
+}
+
+.form-shop input::placeholder,
+.form-shop textarea::placeholder {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+
+    @include tablet {
+        font-size: 14px;
+    }
+    color: var(--primary-text-color);
+    }
+
+.form-shop__input:not(:placeholder-shown):required:valid {
+    border-color: var(--main-background-color);
+    background-color: rgba(248, 210, 78, 0.1);
+}
+
+.form-shop__input:not(:placeholder-shown):required:invalid {
+    border-color: red;
+}
+
+.form-button {
+    /* button style */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-width: 114px;
+    padding: 12px 34px;
+
+    @include tablet {
+        min-width: 121px;
+    }
+    transition: background-color 500ms var(--cubic),
+    outline 500ms var(--cubic);
+    background: var(--hover-text-color);
+    border-radius: 10px;
+    border-color: transparent;
+    /* button text */
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+
+    cursor: pointer;
+
+    color: var(--primary-text-color);
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+.form-button:hover {
+    background-color: var(--primary-button-color);
+}
+
+.form-button:focus {
+        outline: 2px solid var(--primary-button-color);
+        color: #FCFCFC;
+    }
