@@ -22,6 +22,7 @@
 
 .gallery-page {
   position: relative;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -29,18 +30,21 @@
 }
 
 .gallery-container {
-  margin-bottom: -60px;
+  //margin-bottom: -60px;
+  position: absolute;
+  top: -30px;
+  left: 0;
 
- @include tablet {
-    margin-bottom: -162px;
+  @include tablet {
+    top: -164px;
   }
 
   @include desktop {
-    margin-bottom: -328px;
+    top: -98px;
   }
 }
 .gallery-list {
-  position: absolute;
+  //position: absolute;
   width: 100%;
   max-width: 280px;
 
@@ -70,7 +74,7 @@
 .gallery-item {
   list-style: none;
 
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 0;
   width: 100%;
