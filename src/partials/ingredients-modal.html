@@ -1,130 +1,138 @@
-<div class="backdrop is-hidden" data-modal>
-<div class="modal-ingredients">
-  <button data-modal-close type="button" class="modal-ingredients__close" data-modal-close>
-    <svg class="modal-icon" width="20" height="20">
-      <use
-        href="./images/sprite/symbol-defs.svg#icon-close-button"
-        width="20"
-        heinth="20"
-      ></use>
-    </svg>
-  </button>
-  <p class="modal-ingredients__title">Chololate icecream</p>
-  <div class="modal-ingredients__thumb">
-    <picture class="modal-ingredients__icon">
-      <source
-        srcset="
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
-          ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img
-        src="./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png"
-        alt="Chokolate icecream"
-        width="131"
-      />
-    </picture>
+<div class="backdrop is-hidden" data-products-modal>
+  <div class="modal-ingredients">
+    <button
+      data-modal-close
+      type="button"
+      class="modal-ingredients__close"
+      data-products-modal-close
+    >
+      <svg class="modal-icon" width="20" height="20">
+        <use
+          href="./images/sprite/symbol-defs.svg#icon-close-button"
+          width="20"
+          heinth="20"
+        ></use>
+      </svg>
+    </button>
+    <p class="modal-ingredients__title">Chololate icecream</p>
+    <div class="modal-ingredients__thumb">
+      <picture class="modal-ingredients__icon">
+        <source
+          srcset="
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate.png   1x,
+            ./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/mobile/ingredients-modal-mobile/ice-cream-chokolate2x.png"
+          alt="Chokolate icecream"
+          width="131"
+        />
+      </picture>
+    </div>
+    <ul class="ingredients__list list">
+      <li class="ingredients__item">
+        <span class="up"><p class="ingredients__dose">320</p></span>
+        <span class="down"> <p class="ingredients__elements">kcal</p> </span>
+      </li>
+      <li class="ingredients__item">
+        <span class="up"><p class="ingredients__dose">4g</p></span>
+        <span class="down">
+          <p class="ingredients__elements">Prote...</p>
+        </span>
+      </li>
+      <li class="ingredients__item">
+        <span class="up"><p class="ingredients__dose">8,2g</p></span>
+        <span class="down"> <p class="ingredients__elements">Fats</p> </span>
+      </li>
+      <li class="ingredients__item">
+        <span class="up"><p class="ingredients__dose">40,4g</p></span>
+        <span class="down"> <p class="ingredients__elements">Carbs</p> </span>
+      </li>
+    </ul>
+    <p class="modal-ingredients__catalog">Ingredients</p>
+    <ul class="catalog__list list">
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Milk</p></span>
+        <span class="right"> <p class="catalog__dose">100ml</p> </span>
+      </li>
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Belgian chocolate</p></span>
+        <span class="right"> <p class="catalog__dose">20g</p> </span>
+      </li>
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Cream</p></span>
+        <span class="right"> <p class="catalog__dose">150 ml</p> </span>
+      </li>
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Cocoa powder</p></span>
+        <span class="right"> <p class="catalog__dose">30g</p> </span>
+      </li>
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Sugar</p></span>
+        <span class="right"> <p class="catalog__dose">40g</p> </span>
+      </li>
+      <li class="catalog__item">
+        <span class="left"><p class="catalog__sku">Vanilla sugar</p></span>
+        <span class="right"> <p class="catalog__dose">10g</p> </span>
+      </li>
+    </ul>
+    <form action="#" class="ingredients-form">
+      <div class="label-input">
+        <label for="user-name" class="input-field"> </label>
+        <input
+          type="text"
+          class="form-input"
+          id="user-name"
+          name="user-name"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="label-input">
+        <label for="user-tel" class="input-field"></label>
+        <input
+          type="tel"
+          class="form-input"
+          id="user-tel"
+          name="user-tel"
+          placeholder="Phone"
+          title="+380 (98)000-00-00"
+          required
+          pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          minlength="13"
+          maxlength="13"
+        />
+      </div>
+
+      <div class="label-input label-comment">
+        <label for="user-comment" class="input-field"> </label>
+        <textarea
+          id="user-comment"
+          name="user-comment"
+          cols="30"
+          rows="10"
+          class="modal-comment-text"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="modal-button">Submit</button>
+    </form>
   </div>
-  <ul class="ingredients__list list">
-    <li class="ingredients__item">
-      <span class="up"><p class="ingredients__dose">320</p></span>
-      <span class="down"> <p class="ingredients__elements">kcal</p> </span>
-    </li>
-    <li class="ingredients__item">
-      <span class="up"><p class="ingredients__dose">4g</p></span>
-      <span class="down"> <p class="ingredients__elements">Prote...</p> </span>
-    </li>
-    <li class="ingredients__item">
-      <span class="up"><p class="ingredients__dose">8,2g</p></span>
-      <span class="down"> <p class="ingredients__elements">Fats</p> </span>
-    </li>
-    <li class="ingredients__item">
-      <span class="up"><p class="ingredients__dose">40,4g</p></span>
-      <span class="down"> <p class="ingredients__elements">Carbs</p> </span>
-    </li>
-  </ul>
-  <p class="modal-ingredients__catalog">Ingredients</p>
-  <ul class="catalog__list list">
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Milk</p></span>
-      <span class="right"> <p class="catalog__dose">100ml</p> </span>
-    </li>
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Belgian chocolate</p></span>
-      <span class="right"> <p class="catalog__dose">20g</p> </span>
-    </li>
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Cream</p></span>
-      <span class="right"> <p class="catalog__dose">150 ml</p> </span>
-    </li>
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Cocoa powder</p></span>
-      <span class="right"> <p class="catalog__dose">30g</p> </span>
-    </li>
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Sugar</p></span>
-      <span class="right"> <p class="catalog__dose">40g</p> </span>
-    </li>
-    <li class="catalog__item">
-      <span class="left"><p class="catalog__sku">Vanilla sugar</p></span>
-      <span class="right"> <p class="catalog__dose">10g</p> </span>
-    </li>
-  </ul>
-  <form action="#" class="ingredients-form">
-    <div class="label-input">
-      <label for="user-name" class="input-field"> </label>
-      <input
-        type="text"
-        class="form-input"
-        id="user-name"
-        name="user-name"
-        placeholder="Name"
-        required
-      />
-    </div>
-    <div class="label-input">
-      <label for="user-tel" class="input-field"></label>
-      <input
-        type="tel"
-        class="form-input"
-        id="user-tel"
-        name="user-tel"
-        placeholder="Phone"
-        title="+380 (98)000-00-00"
-        required
-        pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-        minlength="13"
-        maxlength="13"
-      />
-    </div>
-
-    <div class="label-input label-comment">
-      <label for="user-comment" class="input-field"> </label>
-      <textarea
-        id="user-comment"
-        name="user-comment"
-        cols="30"
-        rows="10"
-        class="modal-comment-text"
-        placeholder="Comment"
-      ></textarea>
-    </div>
-
-    <button type="submit" class="modal-button">Submit</button>
-  </form>
 </div>
