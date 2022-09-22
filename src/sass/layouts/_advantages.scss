@@ -16,12 +16,15 @@
     display: block;
     display: flex;
     flex-wrap: wrap;
-    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
     justify-content: center;
 
     @include tablet {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: row;
+      //flex-wrap: wrap;
       gap: 80px;
       justify-content: center;
     }
@@ -61,6 +64,14 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
+
+    @include tablet {
+      margin-bottom: 32px;
+    }
+    @include desktop {
+      margin-bottom: 40px;
+    }
   }
   &-item:first-child::before {
     content: '';
@@ -74,7 +85,7 @@
     background-image: url(../images/mobile/advantages-mobile/ice-min.png);
   }
   &-list__mr {
-    margin-bottom: 22px;
+    //margin-bottom: 22px;
   }
   &-list__mr:first-child {
     margin-bottom: 0;
@@ -89,15 +100,15 @@
   }
 
   &-item__mr {
-    margin-top: 16px;
-    margin-bottom: 18px;
+    //margin-top: 16px;
+    //margin-bottom: 18px;
 
     @include tablet {
-      margin-top: 32px;
-      margin-bottom: 16px;
+      //margin-top: 32px;
+      //margin-bottom: 16px;
     }
     @include desktop {
-      margin-top: 40px;
+      //margin-top: 40px;
     }
   }
 
@@ -105,16 +116,18 @@
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    margin-bottom: 18px;
+    //padding-top: 21px;
+    //padding-bottom: 21px;
     @include tablet {
       font-family: 'Montserrat';
       font-size: 48px;
       line-height: 1.23;
+      margin-bottom: 16px;
     }
     @include desktop {
       font-size: 58px;
