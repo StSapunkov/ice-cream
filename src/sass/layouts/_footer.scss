@@ -15,6 +15,7 @@
 
 .footer-slogan {
     padding-right: 46px;
+    margin-bottom: 42px;
 
     @include tablet {
         padding-right: 0;
@@ -59,8 +60,7 @@
     text-transform: uppercase;
     color: var(--main-text-color);
 
-    margin-bottom: 42px;
-
+    
     @include tablet {
         margin-bottom: 0;
         font-size: 48px;
@@ -83,7 +83,7 @@
     }
 }
 
-.footer-social__items {
+.footer-social__items { 
     display: flex;
     align-items: center;
     justify-content: center;
